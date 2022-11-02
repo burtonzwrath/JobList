@@ -14,7 +14,7 @@ function JobList() {
 
   return (
     <div className="App flex justify-center bg-sky-50  ">
-      <div className="list_wrapper flex flex-col gap-2 w-[96%] sm:w-[70%] mt-6 mb-6 ">
+      <div className="list_wrapper flex flex-col gap-2 w-[96%] md:w-[70%] mt-6 mb-6 ">
         {dataArray.map((item, index) => (
           <ListItem key={item.id} item={item} index={index} />
         ))}

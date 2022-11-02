@@ -8,7 +8,7 @@ function SectionImages({ pictures }) {
         <div>
           <hr />
         </div>
-        <div className="flex gap-2 pt-2">
+        <div className="flex gap-2 flex-col md:flex-row  items-center  pt-2">
           {pictures.map((picture, index) => (
             <img key={index} className="image w-52 h-28 rounded-lg" src={picture} alt="" />
           ))}

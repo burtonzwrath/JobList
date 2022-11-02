@@ -22,11 +22,13 @@ function DetailedJob() {
   } = state.item;
 
   return (
-    <div className="flex justify-center mr-40 ">
-      <div className="content_wrapper flex justify-around pl-40 w-[1600px] justify-between mt-20 ">
+    <div className="flex justify-center mr-12 sm:mr-40 ">
+      <div className="content_wrapper flex justify-around pl-4  lg:pl-40 max-w-screen-2xl justify-between mt-20 ">
         <div className="detailedInfo__wrapper  max-w-3xl ">
           <Header />
-          <ButtonApply />
+          <div className="hidden md:block">
+            <ButtonApply />
+          </div>
           <main>
             <SectionTitle state={state.item} days={state.daysAgo} />
             <SectionDescription description={description} />
@@ -41,7 +43,7 @@ function DetailedJob() {
             <ButtonReturn />
           </footer>
         </div>
-        <div className="detailedMap_wrapper ml-20 map w-[400px] h-[430px] border rounded-2xl overflow-hidden shrink-0 text-white ml-5">
+        <div className=" hidden detailedMap_wrapper ml-20 map w-[400px] h-[430px] border rounded-2xl overflow-hidden shrink-0 text-white ml-5">
           <Map adress={address} email={email} name={name} phone={phone} />
         </div>
       </div>

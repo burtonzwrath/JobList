@@ -19,7 +19,7 @@ function SectionDescription({ description }) {
           </div>
         ))}
       </div>
-      <ul className="list-[square] marker:text-slate-400 text-sky-900 ">
+      <ul className="list-[square] pl-5 xl:pl-0 marker:text-slate-400 text-sky-900 ">
         {benefits.map((item, index) => (
           <li key={index}>{item}</li>
         ))}

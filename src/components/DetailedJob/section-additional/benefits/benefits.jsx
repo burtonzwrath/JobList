@@ -2,7 +2,7 @@ import React from 'react';
 
 function Benefits({benefits}) {
     return (
-        <div className="flex gap-2">
+        <div className="flex flex-col md:flex-row gap-2">
             {benefits.map((benefit, index) => (
                 <div
                     key={index}
