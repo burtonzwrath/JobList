@@ -41,7 +41,7 @@ function DetailedJob() {
             <ButtonReturn />
           </footer>
         </div>
-        <div className="detailedMap_wrapper map w-[400px] h-[430px] border rounded-2xl overflow-hidden shrink-0 text-white ml-5">
+        <div className="detailedMap_wrapper ml-20 map w-[400px] h-[430px] border rounded-2xl overflow-hidden shrink-0 text-white ml-5">
           <Map adress={address} email={email} name={name} phone={phone} />
         </div>
       </div>
