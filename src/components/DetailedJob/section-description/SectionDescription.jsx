@@ -3,7 +3,6 @@ import React from "react";
 function SectionDescription({ description }) {
   const split = description.split(/(?:\r?\n)+/);
   const benefits = split[7].split(".").slice(0, -1);
-  console.log(benefits);
 
   return (
     <>

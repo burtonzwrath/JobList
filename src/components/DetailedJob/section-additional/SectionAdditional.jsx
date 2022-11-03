@@ -4,7 +4,7 @@ import Benefits from "./benefits/benefits";
 
 function SectionAdditional({ employmentType, benefits }) {
   return (
-    <section className="detailed__Addition mt-20 flex flex-col gap-4">
+    <section className="detailed__Addition mt-20 flex flex-col gap-4 ">
       <div className="additional__info  flex flex-col gap-2">
         <div className="font-bold text-sky-900 text-2xl">Additional info</div>
         <div>

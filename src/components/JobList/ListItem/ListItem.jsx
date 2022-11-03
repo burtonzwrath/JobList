@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
 import rating from "../../../assets/icons/JobList/Rating.png";
-import flag from "../../../assets/icons/JobList/rectangle.png";
+import save from "../../../assets/icons/JobList/save.png";
+import save2 from "../../../assets/icons/JobList/save2.png";
 import location from "../../../assets/icons/JobList/Location.png";
 
-function ListItem({ item, index }) {
+function ListItem({ item, index, saveIconObj }) {
   const updatedDate = new Date(item.updatedAt.slice(0, 10));
   const createdDate = new Date(item.createdAt.slice(0, 10));
 
@@ -14,7 +15,7 @@ function ListItem({ item, index }) {
   const shortTittle = item.title.split(" ").slice(0, 5).join(" ");
 
   return (
-    <div className="listItem relative mim-h-60   xl:h-[164px] flex bg-white gap-5   pt-4 pb-6 pr-4 pl-4 border rounded-xl shadow-xl ">
+    <div className="listItem relative   h-[90%] flex bg-white gap-5   pt-4 pb-6 pr-4 pl-4 border rounded-xl shadow-xl ">
       <div className="w-[65px] h-full   flex items-center   xl:w-[85px] xl:h-[85px] shrink-0">
         <img
           className=" w-[65px] h-[65px]  xl:w-[85px] xl:h-[85px]  rounded-full"
@@ -24,9 +25,9 @@ function ListItem({ item, index }) {
       </div>
       <div className="listItem_wrapper flex flex-col xl:flex-row xl:h-[116px] gap-2 justify-between w-full bg-white">
         <div className="flex gap-6 order-1 xl:order-none">
-          <div className=" w-[90%] flex flex-col justify-between">
+          <div className=" w-[95%] gap-3 flex flex-col justify-between">
             <Link to="/detailedJob" state={{ item, daysAgo }}>
-              <div className="font-semibold text-sky-900 text-[20px] hidden lg:block ">
+              <div className="hover:underline hover:decoration-double font-semibold text-sky-900 text-[20px] hidden lg:block ">
                 {item.title}
               </div>
               <div className="font-semibold  text-sky-900 text-xl lg:hidden">
@@ -57,8 +58,12 @@ function ListItem({ item, index }) {
             />
           </div>
           <div className="w-[138px] flex flex-col justify-between shrink-0">
-            <div role="button" className=" hidden xl:flex  justify-end ">
-              <img src={flag} alt="flag  " />
+            <div
+              onClick={() => saveIconObj?.toggleFlag()}
+              role="button"
+              className=" hidden xl:flex  justify-end "
+            >
+              <img src={saveIconObj?.saveFlag ? save : save2} alt="flag  " />
             </div>
             <div className="text-sm xl:text-sm shrink-0 text-slate-400">
               posted {daysAgo} day(s) ago

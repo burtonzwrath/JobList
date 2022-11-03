@@ -8,7 +8,7 @@ import SectionDescription from "./section-description/SectionDescription";
 import Map from "./map/map";
 import ButtonApply from "./buttons/ButtonApply";
 
-function DetailedJob() {
+function DetailedJob({saveIconObj}) {
   const { state } = useLocation();
   const {
     description,
@@ -22,31 +22,29 @@ function DetailedJob() {
   } = state.item;
 
   return (
-    <div className="flex justify-center mr-12 sm:mr-40 ">
-      <div className="content_wrapper flex justify-around pl-4  lg:pl-40 max-w-screen-2xl justify-between mt-20 ">
+    <div className="flex justify-center mr-12 sm:mr-40 flex-col ">
+      <div className="content_wrapper flex flex-col gap-14 xl:flex-row pl-4  lg:pl-40 max-w-screen-2xl mt-20 ">
         <div className="detailedInfo__wrapper  max-w-3xl ">
-          <Header />
+          <Header saveIconObj={saveIconObj} />
           <div className="hidden md:block">
             <ButtonApply />
           </div>
-          <main>
-            <SectionTitle state={state.item} days={state.daysAgo} />
+          <main className="flex flex-col ">
+            <SectionTitle state={state.item} days={state.daysAgo}  />
             <SectionDescription description={description} />
             <ButtonApply />
+            <SectionImages pictures={pictures} />
             <SectionAdditional
               employmentType={employment_type}
               benefits={benefits}
             />
-            <SectionImages pictures={pictures} />
           </main>
-          <footer>
-            <ButtonReturn />
-          </footer>
         </div>
-        <div className=" hidden detailedMap_wrapper ml-20 map w-[400px] h-[430px] border rounded-2xl overflow-hidden shrink-0 text-white ml-5">
           <Map adress={address} email={email} name={name} phone={phone} />
-        </div>
       </div>
+      <footer>
+      <ButtonReturn />
+      </footer>
     </div>
   );
 }
