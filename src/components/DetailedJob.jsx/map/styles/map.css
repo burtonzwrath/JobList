@@ -1,0 +1,36 @@
+
+.detailedMap {
+    @apply xl:ml-12 w-full  2xl:max-w-[400px] xl:w-[500px]  mb-10   shrink-0 text-white
+}
+.detailedMap_wrapper {
+    @apply flex flex-col gap-6 w-full 2xl:max-w-[400px]
+}
+
+.contacts {
+    @apply flex flex-col gap-3  flex flex-col xl:hidden
+}
+.contacts_text{
+    @apply text-sky-900 text-2xl font-bold
+}
+
+.mapInfo_wrapper {
+    @apply border rounded-xl  relative overflow-hidden h-[440px] max-w-[370px] xl:max-w-[400px]
+}
+
+.mapInfo {
+    @apply z-10 pl-3  absolute h-1/2 bg-slate-800  absolute m-auto left-0 right-0  flex justify-center items-center
+}
+
+.mapInfo_content {
+    @apply flex flex-col items-start justify-center gap-3 w-[277px] h-[170px]
+}
+
+.departament_name {
+    @apply text-base xl:text-xl
+}
+
+.phone_email {
+    @apply text-base
+}
+
+

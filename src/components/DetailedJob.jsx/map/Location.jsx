@@ -1,15 +1,9 @@
 import GoogleMapReact from "google-map-react";
-import Point from "./Point";
+import Marker from "./Marker";
 
-function SimpleMap({location}) {
-  const{lat,long}=location
-  const defaultProps = {
-    center: {
-      lat: lat,
-      lng: long,
-    },
-  };
+function SimpleMap({ location }) {
 
+  const { lat, long } = location;
   const styles = [
     {
       featureType: "all",
@@ -177,16 +171,22 @@ function SimpleMap({location}) {
       ],
     },
   ];
+  const defaultProps = {
+    center: {
+      lat: lat,
+      lng: long,
+    },
+  };
 
   return (
-    <div className="w-[740px] h-[350px] absolute -left-72 -bottom-10 z-0">
+    <div className="location">
       <GoogleMapReact
         bootstrapURLKeys={{ key: "AIzaSyCUOVWz4u85at7PpkHJQ-zmAtcx8v28E9Y" }}
         defaultCenter={defaultProps.center}
         options={{ styles, draggable: "true", disableDefaultUI: true }}
-        defaultZoom={10}
+        defaultZoom={2}
       >
-        <Point lat={lat} lng={long} />
+        <Marker lat={lat} lng={long} />
       </GoogleMapReact>
     </div>
   );

@@ -1,22 +1,37 @@
-import ListItem from "./ListItem";
-import pagination from "../../assets/images/jobList/Pagination.png";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { JobListContext } from "../../context/jobListContext";
+import Pagination from "./Pagination/Pagination";
+import Jobs from "./Jobs/Jobs";
 
-function JobList({}) {
+function JobList() {
   const { jobList } = useContext(JobListContext);
+  const [jobsPerPage] = useState(10);
+  const [currentPage, setCurrentPage] = useState(1);
+  const indexOfLastPost = currentPage * jobsPerPage;
+  const indexOfFirstPost = indexOfLastPost - jobsPerPage;
+  const currentJobs = jobList.slice(indexOfFirstPost, indexOfLastPost);
+  const totalPosts = jobList.length;
+  const pageNumbers = [];
+
+  for (let i = 1; i <= Math.ceil(totalPosts / jobsPerPage); i++) {
+    pageNumbers.push(i);
+  }
+
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
+  const paginateFront = () => currentPage !== pageNumbers[pageNumbers.length - 1]? setCurrentPage(currentPage + 1):""
+  const paginateBack = () => currentPage !== pageNumbers[0]? setCurrentPage(currentPage - 1):""
 
   return (
-    <div className="App flex justify-center bg-sky-50 items-center   flex-col ">
-      <div className="mapLocation"></div>
-      <div className="list_wrapper flex flex-col gap-2 w-[96%] md:w-[70%] mt-6 mb-6 ">
-        {jobList.map((item, index) => (
-          <ListItem key={item.id} item={item} index={index} />
-        ))}
-      </div>
-      <div className="pb-20 pt-10">
-        <img src={pagination} alt="pagination" />
-      </div>
+
+    <div className="jobList ">
+      <Jobs jobs={currentJobs} />
+      <Pagination
+        paginate={paginate}
+        currentPage={currentPage}
+        paginateBack={paginateBack}
+        paginateFront={paginateFront}
+        pageNumbers={pageNumbers}
+      />
     </div>
   );
 }

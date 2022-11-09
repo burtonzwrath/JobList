@@ -1,0 +1,4 @@
+
+.jobs {
+    @apply flex flex-col gap-2 w-full md:w-[70%] mt-6 mb-6
+}

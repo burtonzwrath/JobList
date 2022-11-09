@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import JobList from "./components/JobList/JobList";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import JobDetails from "./components/JobDetails/JobDetails";
+import DetailedJob from "./components/DetailedJob.jsx/DetailedJob";
 import JobListProvider from "./context/jobListContext";
 
 function App() {
@@ -10,8 +10,8 @@ function App() {
       <BrowserRouter>
           <JobListProvider>
             <Routes>
-              <Route path="/" element={<JobList />} />
-              <Route path="/:id" element={<JobDetails />} />
+              <Route  path="/" element={<JobList />} />
+              <Route path="/:id" element={<DetailedJob />} />
             </Routes>
           </JobListProvider>
       </BrowserRouter>

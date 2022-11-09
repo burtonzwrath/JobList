@@ -1,0 +1,28 @@
+
+.pagination_wrapper {
+    @apply pr-5  pl-5 rounded-lg bg-white mb-10 border flex gap-6 items-center
+}
+
+.pagination_nav{
+    @apply block pl-5 pr-5
+}
+
+.nav_ul {
+    @apply flex pl-0 rounded list-none flex-wrap
+}
+
+.nav_li{
+    @apply text-gray-500  border-b-4 border-b-white hover:bg-gray-200 duration-200 relative inline-flex items-center px-4 py-2  text-lg font-medium
+}
+
+.nav_li-active {
+    @apply text-blue-700 border-b-4 duration-200 border-blue-700  hover:bg-blue-200 relative inline-flex items-center px-4 py-2  text-lg font-medium
+}
+
+.arrow {
+    @apply hover:scale-[1.3] duration-200 cursor-pointer
+}
+
+.vertical_line {
+    @apply w-[1px] h-7 border-l-[1px] border-gray-300
+}

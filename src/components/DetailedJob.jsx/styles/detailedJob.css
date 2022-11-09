@@ -1,0 +1,20 @@
+
+.detailedJob_wrapper {
+    @apply flex justify-center overflow-hidden xl:items-center   w-screen  flex-col bg-white
+}
+
+.content_wrapper {
+    @apply pr-3 bg-white  flex flex-col gap-14 xl:gap-0  xl:flex-row pl-3  lg:pl-40 max-w-screen-2xl mt-20
+}
+
+.info_wrapper {
+    @apply max-w-3xl
+}
+
+.button_hide {
+    @apply hidden md:block
+}
+
+.main_content {
+    @apply flex flex-col
+}

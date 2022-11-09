@@ -1,3 +1,22 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
+@import "components/DetailedJob.jsx/buttons/styles/buttonApply.css";
+@import "components/DetailedJob.jsx/buttons/styles/buttonReturn.css";
+@import "components/DetailedJob.jsx/header/styles/header.css";
+@import "components/DetailedJob.jsx/map/styles/location.css";
+@import "components/DetailedJob.jsx/map/styles/map.css";
+@import "components/DetailedJob.jsx/section-additional/styles/sectionAdditional.css";
+@import "components/DetailedJob.jsx/section-additional/benefits/styles/benefits.css";
+@import "components/DetailedJob.jsx/section-additional/employmentType/styles/employment.css";
+@import "components/DetailedJob.jsx/section-description/styles/sectionDescription.css";
+@import "components/DetailedJob.jsx/section-images/styles/sectionImages.css";
+@import "components/DetailedJob.jsx/section-title/styles/sectionTitle.css";
+@import "components/DetailedJob.jsx/styles/detailedJob.css";
+@import "components/JobList/styles/jobList.css";
+@import "components/JobList/Jobs/styles/jobs.css";
+@import "components/JobList/JobItem/styles/listItem.css";
+@import "components/JobList/JobItem/ItemImage/styles/itemImage.css";
+@import "components/JobList/JobItem/ItemInfo/styles/itemInfo.css";
+@import "components/JobList/JobItem/ItemLinks/styles/itemLinks.css";
+@import "components/JobList/JobItem/ItemRating/styles/itemRating.css";
+@import "components/JobList/JobItem/ItemTitle/styles/itemTitle.css";
+@import "components/JobList/Pagination/styles/pagination.css";

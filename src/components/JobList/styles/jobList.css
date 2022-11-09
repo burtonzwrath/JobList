@@ -1,0 +1,4 @@
+
+.jobList {
+    @apply  flex flex-col gap-10 items-center bg-slate-200
+}
