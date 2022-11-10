@@ -1,9 +1,12 @@
 import { useContext, useState } from "react";
-import { JobListContext } from "../../context/jobListContext";
+
 import Pagination from "./Pagination/Pagination";
 import Jobs from "./Jobs/Jobs";
+import { JobListContext } from "../../context/jobListContext";
 
-function JobList() {
+function JobList({}) {
+  console.log("jobList-render");
+
   const { jobList } = useContext(JobListContext);
   const [jobsPerPage] = useState(10);
   const [currentPage, setCurrentPage] = useState(1);
@@ -18,11 +21,16 @@ function JobList() {
   }
 
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
-  const paginateFront = () => currentPage !== pageNumbers[pageNumbers.length - 1]? setCurrentPage(currentPage + 1):""
-  const paginateBack = () => currentPage !== pageNumbers[0]? setCurrentPage(currentPage - 1):""
+  const paginateFront = () =>
+    currentPage !== pageNumbers[pageNumbers.length - 1]
+      ? setCurrentPage(currentPage + 1)
+      : "";
+  const paginateBack = () =>
+    currentPage !== pageNumbers[0] ? setCurrentPage(currentPage - 1) : "";
+
+  console.log("### JobList currentJobs", currentJobs);
 
   return (
-
     <div className="jobList ">
       <Jobs jobs={currentJobs} />
       <Pagination

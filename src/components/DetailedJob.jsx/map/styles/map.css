@@ -1,9 +1,9 @@
 
 .detailedMap {
-    @apply xl:ml-12 w-full  2xl:max-w-[400px] xl:w-[500px]  mb-10   shrink-0 text-white
+    @apply xl:ml-12 w-full   2xl:max-w-[400px] xl:w-[500px]  mb-10   shrink-0 text-white
 }
 .detailedMap_wrapper {
-    @apply flex flex-col gap-6 w-full 2xl:max-w-[400px]
+    @apply flex flex-col max-w-3xl gap-6 w-full 2xl:max-w-[400px]
 }
 
 .contacts {
