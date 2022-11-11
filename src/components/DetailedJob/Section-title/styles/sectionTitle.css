@@ -1,0 +1,43 @@
+
+.detailed_Title{
+  @apply  flex flex-col
+}
+
+.title_wrapper {
+    @apply pt-5 flex justify-between
+}
+
+.title {
+    @apply max-w-[500px]  text-sky-900 font-semibold text-xl
+}
+
+.salary_xl {
+    @apply pl-5 shrink-0  hidden xl:block
+}
+
+.salary_xl_info {
+    @apply text-sky-900 font-semibold text-xl
+}
+
+.salary_xl_text {
+    @apply text-sky-900 font-semibold text-sm
+}
+.salary {
+    @apply pr-5 pl-5 shrink-0  xl:hidden
+}
+
+.salary_info {
+    @apply text-sky-900 font-semibold text-sm flex justify-end
+}
+
+.salary_text {
+    @apply text-sky-900 font-semibold text-xl
+}
+
+.posted {
+    @apply flex justify-between pt-7 xl:pt-0
+}
+
+.posted_info {
+    @apply pt-2 text-stone-300
+}

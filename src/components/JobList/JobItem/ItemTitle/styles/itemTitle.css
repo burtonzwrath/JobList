@@ -1,0 +1,8 @@
+
+.title {
+    @apply hover:underline hover:decoration-double font-semibold text-sky-900 text-[20px] hidden lg:block
+}
+
+.short_title {
+    @apply font-semibold  text-sky-900 text-xl lg:hidden
+}

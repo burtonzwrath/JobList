@@ -1,0 +1,12 @@
+
+.item_rating-links {
+    @apply w-[138px] flex flex-col justify-between shrink-0
+}
+
+.links_content {
+    @apply  hidden xl:flex  justify-end
+}
+
+.item_posted {
+    @apply text-sm xl:text-sm shrink-0 text-slate-400 flex justify-end
+}

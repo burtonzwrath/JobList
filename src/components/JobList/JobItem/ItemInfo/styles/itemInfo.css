@@ -1,0 +1,20 @@
+
+.item_info {
+    @apply flex flex-col gap-1
+}
+
+.item_name {
+    @apply text-[16px] text-slate-400
+}
+
+.item_content {
+    @apply flex gap-3
+}
+
+.info_image {
+    @apply flex items-center
+}
+
+.info_location{
+    @apply text-[16px] text-slate-400
+}

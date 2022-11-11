@@ -1,0 +1,8 @@
+
+.item_image {
+    @apply w-[65px] h-full   flex items-center   xl:w-[85px] xl:h-[85px] shrink-0
+}
+
+.image {
+    @apply  w-[65px] h-[65px]  xl:w-[85px] xl:h-[85px]  rounded-full
+}

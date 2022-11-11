@@ -1,0 +1,4 @@
+
+.rating_stars {
+    @apply  w-12 h-3 xl:w-20 xl:h-full  flex items-center
+}

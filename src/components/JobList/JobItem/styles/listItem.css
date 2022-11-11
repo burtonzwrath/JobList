@@ -1,0 +1,16 @@
+
+.listItem {
+    @apply relative  h-[90%] flex bg-white gap-5   pt-4 pb-6 mr-2 pr-4 pl-4 ml-2 border  rounded-xl shadow-xl
+}
+
+.listItem_wrapper {
+    @apply  flex flex-col xl:flex-row xl:h-[116px] gap-2 justify-between w-full bg-white
+}
+
+.listItem_content {
+    @apply gap-3 flex flex-col justify-between order-1 xl:order-none
+}
+
+.listItem_rating-links {
+    @apply flex justify-between  xl:gap-10 shrink-0
+}
