@@ -1,4 +1,3 @@
-
 @import "components/DetailedJob/Buttons/styles/buttonApply.css";
 @import "components/DetailedJob/Buttons/styles/buttonReturn.css";
 @import "components/DetailedJob/Header/styles/header.css";
@@ -20,3 +19,6 @@
 @import "components/JobList/JobItem/ItemRating/styles/itemRating.css";
 @import "components/JobList/JobItem/ItemTitle/styles/itemTitle.css";
 @import "components/JobList/Pagination/styles/pagination.css";
+
+
+

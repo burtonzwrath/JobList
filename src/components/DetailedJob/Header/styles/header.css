@@ -7,7 +7,7 @@
 }
 
 .header_text {
-  @apply text-2xl text-sky-900 font-bold;
+  @apply text-2xl text-sky-900 font-bold
 }
 
 .icons_wrapper {
@@ -35,7 +35,7 @@
 }
 
 .shareIcon_wrapper {
-  @apply flex gap-3 duration-200 hover:shadow-[8px_5px_3px_rgba(128,189,227,0.3)];
+  @apply   gap-3 flex duration-200 hover:shadow-[8px_5px_3px_rgba(128,189,227,0.3)];
 }
 
 .shareIcon {
@@ -47,7 +47,7 @@
 }
 
 .text_share {
-  @apply text-lg text-sky-900 pr-2;
+  @apply text-lg text-sky-900 pr-2 ;
 }
 
 .header_line {

@@ -15,7 +15,7 @@ function Header({ job }) {
     item && (
       <header className="header">
         <div className="header_content  ">
-          <div className="header_text ">Job Details</div>
+          <div className="header_text">Job Details</div>
           <div className="icons_wrapper ">
             <div
               onClick={() => {
