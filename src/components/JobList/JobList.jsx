@@ -4,9 +4,7 @@ import Pagination from "./Pagination/Pagination";
 import Jobs from "./Jobs/Jobs";
 import { JobListContext } from "../../context/jobListContext";
 
-function JobList({}) {
-  console.log("jobList-render");
-
+function JobList() {
   const { jobList } = useContext(JobListContext);
   const [jobsPerPage] = useState(10);
   const [currentPage, setCurrentPage] = useState(1);
@@ -27,8 +25,6 @@ function JobList({}) {
       : "";
   const paginateBack = () =>
     currentPage !== pageNumbers[0] ? setCurrentPage(currentPage - 1) : "";
-
-  console.log("### JobList currentJobs", currentJobs);
 
   return (
     <div className="jobList ">

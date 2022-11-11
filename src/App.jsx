@@ -1,8 +1,8 @@
-import React, {useContext} from "react";
+import React from "react";
 import "./App.css";
 import JobList from "./components/JobList/JobList";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import DetailedJob from "./components/DetailedJob.jsx/DetailedJob";
+import DetailedJob from "./components/DetailedJob/DetailedJob";
 import JobListProvider, {JobListContext} from "./context/jobListContext";
 
 function App() {

@@ -12,10 +12,7 @@ function Pagination({
 
   return (
     <div className=" pagination_wrapper ">
-      <div
-        onClick={() => paginateBack()}
-        className="arrow"
-      >
+      <div onClick={() => paginateBack()} className="arrow">
         <img src={arrowLeft} alt="arrowLeft" />
       </div>
       <div className="vertical_line"></div>
@@ -24,15 +21,12 @@ function Pagination({
           <li>
             {pageNumbers.map((number, index) => (
               <a
+                  href="#"
                 key={index}
                 onClick={() => {
                   paginate(number);
                 }}
-                className={
-                  currentPage === number
-                    ? "nav_li-active"
-                    : "nav_li"
-                }
+                className={currentPage === number ? "nav_li-active" : "nav_li"}
               >
                 {number}
               </a>
@@ -41,10 +35,7 @@ function Pagination({
         </ul>
       </nav>
       <div className="vertical_line"></div>
-      <div
-        onClick={() => paginateFront()}
-        className="arrow"
-      >
+      <div onClick={() => paginateFront()} className="arrow">
         <img src={arrowRight} alt="arrowLeft" />
       </div>
     </div>

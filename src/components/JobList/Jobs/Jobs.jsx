@@ -1,10 +1,7 @@
 import React from "react";
 import ListItem from "../JobItem/ListItem";
 
-const Jobs = ({ jobs, loading }) => {
-  if (loading) {
-    return <h2>Loading...</h2>;
-  }
+const Jobs = ({ jobs }) => {
 
   return (
     <div className="jobs ">
