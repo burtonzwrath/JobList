@@ -7,11 +7,11 @@
 }
 
 .header_text {
-  @apply text-2xl text-sky-900 font-bold
+  @apply text-2xl text-sky-900 font-bold font-proximaNova
 }
 
 .icons_wrapper {
-  @apply flex gap-8;
+  @apply flex gap-8 font-proximaNova lg:font-roboto;
 }
 
 .saveIcon_wrapper {

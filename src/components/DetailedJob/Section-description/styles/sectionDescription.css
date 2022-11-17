@@ -1,10 +1,10 @@
 
 .detailed_Description{
-    @apply flex flex-col
+    @apply flex flex-col font-proximaNova lg:font-roboto gap-2
 }
 
 .description_item {
-  @apply   text-sky-900 pt-2
+  @apply   text-sky-900
 }
 
 .description_list {

@@ -8,7 +8,7 @@
 }
 
 .images_text {
-    @apply font-bold text-sky-900 text-2xl
+    @apply font-bold text-sky-900 text-2xl font-proximaNova
 }
 
 .images_carousel {

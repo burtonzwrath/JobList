@@ -20,7 +20,7 @@
 }
 
 .salary_xl_text {
-    @apply text-sky-900 font-semibold text-sm
+    @apply text-sky-900  text-sm font-proximaNova lg:font-roboto
 }
 .salary {
     @apply pr-5 pl-5 shrink-0  xl:hidden
@@ -39,5 +39,5 @@
 }
 
 .posted_info {
-    @apply pt-2 text-stone-300
+    @apply pt-2 text-stone-300 font-roboto
 }

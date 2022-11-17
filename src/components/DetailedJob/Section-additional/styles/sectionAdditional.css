@@ -9,7 +9,7 @@
 }
 
 .additional_text {
-    @apply font-bold text-sky-900 text-2xl
+    @apply font-bold text-sky-900 text-2xl font-proximaNova
 }
 
 
@@ -17,7 +17,7 @@
     @apply flex flex-col gap-2
 }
 .employment_text {
-    @apply text-sky-900  font-medium
+    @apply text-sky-900  font-medium font-roboto
 }
 
 .benefits_wrapper {

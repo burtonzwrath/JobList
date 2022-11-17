@@ -1,6 +1,6 @@
 
 .employment_content {
-  @apply flex gap-2;
+  @apply flex gap-2 font-proximaNova;
 }
 
 .employment {

@@ -8,7 +8,7 @@ function ItemRating({ index }) {
       <img
         className={index === 0 || index === 2 ? "opacity-1" : "opacity-0"}
         src={rating}
-        alt={`rating${index}`}
+        alt="rating"
       />
     </div>
   );

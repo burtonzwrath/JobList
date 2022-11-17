@@ -7,7 +7,7 @@ import { JobListContext } from "../../context/jobListContext";
 function JobList() {
   const { jobList } = useContext(JobListContext);
   const [jobsPerPage] = useState(10);
-  const page = JSON.parse(localStorage.getItem("page"));
+  const page = JSON.parse(sessionStorage.getItem("page"));
   const [currentPage, setCurrentPage] = useState(page ? page : 1);
   const indexOfLastPost = currentPage * jobsPerPage;
   const indexOfFirstPost = indexOfLastPost - jobsPerPage;
@@ -16,7 +16,7 @@ function JobList() {
   const pageNumbers = [];
 
   function setPageToLocalStorage() {
-    localStorage.setItem("page", JSON.stringify(currentPage));
+    sessionStorage.setItem("page", JSON.stringify(currentPage));
   }
 
   useEffect(() => {
