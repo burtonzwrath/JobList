@@ -10,6 +10,7 @@ function Pagination({
   pageNumbers,
 }) {
 
+
   return (
     <div className=" pagination_wrapper ">
       <div onClick={() => paginateBack()} className="arrow">

@@ -6,7 +6,7 @@ const Jobs = ({ jobs }) => {
   return (
     <div className="jobs ">
       {jobs.map((item, index) => (
-        <ListItem key={item.id} item={item} index={index} />
+        <ListItem key={item.id} item={item} index={index}  />
       ))}
     </div>
   );
